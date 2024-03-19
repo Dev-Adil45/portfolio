@@ -2,7 +2,7 @@
     <header>
         <img src="../../public/logo.png" alt="logo-Dev-Adil">
         <h1>Mon Portfolio</h1>
-        <nav>
+        <nav id="navbar">
             <ul>
             <li><a href="">Acceuil</a></li>
             <li><a href="">Moi ?</a></li>
@@ -15,7 +15,17 @@
 </template>
 
 <script setup>
+let lastScroll = 0;
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY < lastScroll) {
+    navbar.style.top = 0;
+  } else {
+    navbar.style.top = "-60px";
+  }
+
+  lastScroll = window.scrollY;
+});
 </script>
 
 <style scoped>
@@ -25,11 +35,10 @@ header {
         text-align: center;
         background-color: #FF3CAC;
         background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-        padding: 50px 0px 5px 0px;
+        padding: 50px 0px 5px 0px;     
     }
 
 img {
-    text-align: center;
     max-width: 150px;
 }
 h1 {
@@ -41,8 +50,13 @@ h1 {
 
 
 nav {
-    background-color: rgb(40, 38, 38);
-    margin-top: 20px;
+    position: fixed;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    height: 50px;
+    min-width: 99%;
+    top: 0;
+    transition: 0.3s;
 }
 nav ul {
     display: flex;
@@ -50,9 +64,7 @@ nav ul {
     list-style: none;
     padding: 0;
 }
-li {
-    padding: 10px;
-}
+
 a {
     color: antiquewhite;
     text-decoration: none;
