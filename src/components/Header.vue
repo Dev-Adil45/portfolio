@@ -6,6 +6,7 @@
             <ul>
             <li><a href="">Acceuil</a></li>
             <li><a href="#AboutMe">Moi ?</a></li>
+            <li><a href="#Competences">Compétences</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="">Mes projets</a></li>
         </ul>
@@ -15,17 +16,7 @@
 </template>
 
 <script setup>
-let lastScroll = 0;
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY < lastScroll) {
-    navbar.style.top = 0;
-  } else {
-    navbar.style.top = "-60px";
-  }
-
-  lastScroll = window.scrollY;
-});
 </script>
 
 <style scoped>
@@ -57,6 +48,7 @@ nav {
     min-width: 99%;
     top: 0;
     transition: 0.3s;
+    z-index: 999;
 }
 nav ul {
     display: flex;
