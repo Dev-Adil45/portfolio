@@ -5,7 +5,7 @@
         <nav id="navbar">
             <ul>
             <li><a href="">Acceuil</a></li>
-            <li><a href="">Moi ?</a></li>
+            <li><a href="#AboutMe">Moi ?</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="">Mes projets</a></li>
         </ul>
