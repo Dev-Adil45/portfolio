@@ -4,7 +4,11 @@
         <h1>Mon Portfolio</h1>
         <nav id="navbar">
             <ul>
-            <li><a href="">Acceuil</a></li>
+            <li><a href="">Acceuil</a>
+            <ul class="Menu-déroulant">
+                    <li><a href="#">=> Mon CV</a></li>
+                    <li><a href="#">=> Espace Commentaire</a></li>
+                    <li><a href="#">=> Portfolio</a></li></ul></li>
             <li><a href="#AboutMe">Moi ?</a></li>
             <li><a href="#Competences">Compétences</a></li>
             <li><a href="">Contact</a></li>
@@ -60,6 +64,36 @@ nav ul {
 a {
     color: antiquewhite;
     text-decoration: none;
+}
+
+.Menu-déroulant {
+    display: none;
+    position: absolute;
+    
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    min-width: 120px;
+    
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.Menu-déroulant li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+    min-height: 60px;
+}
+nav ul li:hover .Menu-déroulant {
+    display: block;
+    font-size: 1.2rem;
+}
+nav ul li {
+    transition: 0.3s;
+}
+nav ul li:hover {
+    font-size: 1.2rem;
+    transition: 0.3s;
 }
 
 </style>
