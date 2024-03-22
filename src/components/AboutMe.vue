@@ -20,17 +20,16 @@
     padding: 30px 20px;
     background-color: rgba(250, 235, 215, 0.679);
     border-radius: 50px;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: opacity 0.3s;
-    transition: 0.3s;  
+    transition: 0.2s;  
 }
 
 #AboutMe:hover {
     opacity: 1;
     background-color: rgba(159, 184, 205, 0.962);
-    transition: 0.3s;
+    transition: 0.2s;
     width: 57%;
-
 }
 
 
