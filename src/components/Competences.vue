@@ -52,7 +52,8 @@ img {
 
 
 .container-competences {
-    background-color: rgba(159, 184, 205, 0.745);
+    background-color: #ff3caa50;
+    background-image: linear-gradient(225deg, #ff3caa71 0%rgba(120, 75, 1rgba(43, 133, 197, 0.334)79)A0 50%, #2B86C5 100%);
     padding: 15px;
     margin: 20px auto;
     display: flex;
@@ -61,14 +62,15 @@ img {
     text-align: center;
     border-radius: 50px;
     width: 65%;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: opacity 0.2s;
 }
 .container-competences:hover {
     opacity: 1;
-    width: 68%;
+    width: 66%;
     transition: 0.2s;
-    background-color: rgba(159, 184, 205, 0.962);
+    background-color: #ff3caac1;
+    background-image: linear-gradient(225deg, #ff3caab6 0%, #784ba0 50%rgba(43, 133, 197, 0.721)C5 100%);
 }
  .container {
             display: flex;

@@ -2,9 +2,13 @@ body {
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url(../../public/fond-ecran.jpg) center/cover;
-    
+   
+  
 }
 * {
+    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-margin-top: 50px;
 }
