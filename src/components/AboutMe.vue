@@ -10,7 +10,7 @@
 
 </script>
 
-<style scope>
+<style scoped>
 #AboutMe {
     display: flex;
     flex-direction: column;
@@ -18,7 +18,8 @@
     margin: 0 auto;
     text-align: center;
     padding: 30px 20px;
-    background-color: rgba(250, 235, 215, 0.679);
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     border-radius: 50px;
     opacity: 0.7;
     transition: opacity 0.3s;
@@ -27,9 +28,10 @@
 
 #AboutMe:hover {
     opacity: 1;
-    background-color: rgba(159, 184, 205, 0.962);
     transition: 0.2s;
-    width: 57%;
+    width: 56%;
+    background-color: #ff3caa77;
+        background-image: linear-gradient(225deg, #ff3caaa2 0%, #784ba09e 50%, #2b85c58c 100%);
 }
 
 
