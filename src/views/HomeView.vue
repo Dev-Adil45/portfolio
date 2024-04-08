@@ -3,6 +3,7 @@ import Header from '@/components/Header.vue';
 import AboutMe from '@/components/AboutMe.vue';
 import Competences from '@/components/Competences.vue';
 import Projets from '@/components/Projets.vue';
+import Modal from '@/components/Modal.vue';
 
 </script>
 
@@ -12,5 +13,7 @@ import Projets from '@/components/Projets.vue';
     <AboutMe/>
     <Competences/>
     <Projets/>
+    <Modal/>
+
   </main>
 </template>
