@@ -7,8 +7,8 @@
             <li><a href="">Acceuil</a></li>
             <li><a href="#AboutMe">Moi ?</a></li>
             <li><a href="#Competences">Compétences</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="#Project">Mes projets</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Mesprojets">Mes projets</a></li>
         </ul>
     </nav>
         
