@@ -8,16 +8,12 @@
             <li><a href="#AboutMe">Moi ?</a></li>
             <li><a href="#Competences">Compétences</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="">Mes projets</a></li>
+            <li><a href="#Project">Mes projets</a></li>
         </ul>
     </nav>
         
     </header>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 

@@ -11,5 +11,7 @@ body {
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-margin-top: 50px;
+    padding: 0;
+
 }
 

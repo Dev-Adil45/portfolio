@@ -6,9 +6,6 @@
 
 </template>
 
-<script setup>
-
-</script>
 
 <style scoped>
 #AboutMe {
@@ -16,6 +13,7 @@
     flex-direction: column;
     width: 55%;
     margin: 0 auto;
+    
     text-align: center;
     padding: 30px 20px;
     background-color: #FF3CAC;
@@ -29,10 +27,11 @@
 #AboutMe:hover {
     opacity: 1;
     transition: 0.2s;
+    padding-left: 25px;
+    padding-right: 25px;
     width: 56%;
     background-color: #ff3caa77;
         background-image: linear-gradient(225deg, #ff3caaa2 0%, #784ba09e 50%, #2b85c58c 100%);
 }
-
 
 </style>

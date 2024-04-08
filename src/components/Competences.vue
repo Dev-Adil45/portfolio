@@ -1,38 +1,38 @@
 <template>
-  <div class="container-competences" id="Competences">
+  <section class="container-competences" id="Competences">
     <img src="../../public/ampoule.png" alt="icone-ampoule">
   <h2>Mes Compétences</h2>
-  <div class="container">
-        <div class="bubble">HTML5</div>
+  <article class="container">
+        <h3 class="bubble">HTML5</h3>
         <div class="progress-bar">
             <div class="progress">90%</div>
         </div>
-    </div>
-    <div class="container">
-        <div class="bubble">Blender</div>
+    </article>
+    <article class="container">
+        <h3 class="bubble">Blender</h3>
         <div class="progress-bar">
             <div class="progress1">50%</div>
         </div>
-    </div>
-    <div class="container">
-        <div class="bubble">CSS</div>
+    </article>
+    <article class="container">
+        <h3 class="bubble">CSS</h3>
         <div class="progress-bar">
             <div class="progress2">75%</div>
         </div>
-    </div>
-    <div class="container">
-        <div class="bubble">JavaScript</div>
+    </article>
+    <article class="container">
+        <h3 class="bubble">JavaScript</h3>
         <div class="progress-bar">
             <div class="progress1">50%</div>
         </div>
-    </div>
-    <div class="container">
-        <div class="bubble">Vue.Js</div>
+    </article>
+    <article class="container">
+        <h3 class="bubble">Vue.Js</h3>
         <div class="progress-bar">
             <div class="progress1">50%</div>
         </div>
-    </div>
-  </div>
+    </article>
+</section>
 </template>
 
 <script setup>

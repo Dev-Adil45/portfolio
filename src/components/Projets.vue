@@ -1,28 +1,28 @@
 <template>
-    <section>
-    <div class="title-projet">
-     <h2>Mes Projets</h2>
-     <p>Hésitez pas a cliquer sur les liens en dessous des images pour plus de renseignements !</p>
-    </div>
-    <div class="container-projet">
-     <div class="container">
-        <h3>Mon CV</h3>
-        <img src="../../public/Mon-CV.png" alt="Image de mon CV">
-        <a href="">&#10145;Plus d'info&#11013;</a>
-     </div>
-     <div class="container">
-        <h3>Espace commentaire dynamique</h3>
-        <img src="../../public/Espace-commentaire.png" alt="Image site espace commentaire">
-        <a href="">&#10145;Plus d'info&#11013;</a>
-     </div>
-     <div class="container">
-        <h3>Mon Portfolio</h3>
-        <img src="../../public/MonPortfolio.png" alt="Image site de mon portfolio">
-        <a href="">&#10145;Plus d'info&#11013;</a>
-     </div>
-    </div>
-    </section>
-
+   <section>
+    <h2>Mes Projets</h2>
+    <p id="sous-titre">Cliquez sur les images pour plus de renseignement !</p>
+    
+    <ul>
+        <li v-for="project in Tableau" :key="project.id">
+        <h3>{{ project.title }}</h3>
+    <button @click="openModal(project)"><img :src="project.img" alt="Image de mes projets"></button>
+<Modal :isOpen="validBool"> 
+    
+    <template #header>
+        <button class="btn-close" @click="closeModal">X</button>
+        <h3>{{ info1.title }}</h3>
+    </template>
+    <template #body>
+        <img :src="info1.img" alt="Image de mes projets" class="image">
+        <p>{{ info1.techno }}</p>
+        <p>{{ info1.lien }}</p>
+        <p>{{ info1.Page }}</p>
+    </template>
+    <template #footer></template>
+</Modal></li>
+    </ul>
+   </section>
 </template>
 
 
@@ -45,13 +45,13 @@ section:hover {
     background-image: linear-gradient(225deg, #ff3caa64 0%, #784ba069 50%, #2b85c56d 100%);
 }
 
-.container-projet {
+ul {
     display: flex;
     justify-content: space-around;
 }
 
 
-.container {
+li {
     background-color: rgba(100, 224, 224, 0.638);
     border-radius: 50px;
     padding: 10px;
@@ -61,26 +61,54 @@ section:hover {
     flex-direction: column;
     opacity: 0.7;
 }
-.container:hover {
+li:hover {
     opacity: 1;
     transition: 0.3s;
-    box-shadow: 5px 5px 20px 5px #000000; 
-    box-shadow: 5px 5px 20px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
 }
-.title-projet {
-    font-size: 1.5rem;
+h2 {
+    font-size: 1.9rem;
 }
-p {
+#sous-titre{
+    font-size: 1.4rem;
     text-decoration: underline;
 }
 
 img {
     width: 350px;
-    height: 350px;
-    border-radius: 15px
+    height: 380px;
+    border-radius: 15px;
 }
-a {
+.image {
+    width: 350px;
+    height: 380px;
+    border-radius: 15px;
+    transition: 1s;
+    overflow: visible;
+    
+}
+.image:hover {
+    transform: scale(1.5);
+}
+button {
     font-size: 1.2rem;
+    border-radius: 35px;
+    cursor: pointer;
+    
+}
+.btn-close {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50px;
+    background-color: red;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.btn-close:hover {
+    opacity: 1;
+    width: 55px;
 }
 
 
@@ -89,7 +117,31 @@ a {
 
 
 <script setup>
+import {dataBase} from '@/stores/data'
+import Modal from './Modal.vue';
+import {onClickOutside} from '@vueuse/core'
+import { onMounted , ref } from 'vue';
 
+const info = ref(dataBase)
+const info1 = ref(info.value[0])
+const Tableau = ref([])
+const paramClose = ref(null)
+const validBool = ref(false)
+
+onMounted (()=>{
+    Tableau.value = dataBase
+    
+    onClickOutside(paramClose, closeModal)
+
+})
+
+const openModal = (project)=>{
+    info1.value = project
+    validBool.value = true
+}
+const closeModal = ()=>{
+    validBool.value = false
+}
 
 </script>
 
