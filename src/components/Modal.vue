@@ -24,6 +24,7 @@ const props = defineProps ({isOpen:Boolean})
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 .modal-wrapper {
@@ -35,7 +36,7 @@ const props = defineProps ({isOpen:Boolean})
 }
 
 .modal-content {
-  background-color: #6c116cb5;
+  background-color: #6c116c;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   width: 50%;

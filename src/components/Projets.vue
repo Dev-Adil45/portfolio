@@ -1,5 +1,5 @@
 <template>
-   <section>
+   <section id="Mesprojets">
     <h2>Mes Projets</h2>
     <p id="sous-titre">Cliquez sur les images pour plus de renseignement !</p>
     
@@ -89,7 +89,7 @@ img {
     
 }
 .image:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 button {
     font-size: 1.2rem;

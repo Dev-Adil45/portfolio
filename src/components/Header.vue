@@ -1,14 +1,14 @@
 <template>
-    <header>
+    <header id="top">
         <img src="../../public/logo.png" alt="logo-Dev-Adil">
         <h1>Mon Portfolio</h1>
         <nav id="navbar">
             <ul>
-            <li><a href="">Acceuil</a></li>
+            <li><a href="#top"><img id="icon-navbar" src="../../public/logo.png" alt="Logo-DevAdil"></a></li>
             <li><a href="#AboutMe">Moi ?</a></li>
             <li><a href="#Competences">Compétences</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="#Project">Mes projets</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Mesprojets">Mes projets</a></li>
         </ul>
     </nav>
         
@@ -16,14 +16,17 @@
 </template>
 
 <style scoped>
-
+#icon-navbar {
+    width: 45px;
+    height: 45px;
+}
 
 header {
         width: 100vw;
         text-align: center;
         background-color: #FF3CAC;
         background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-        padding: 50px 0px 0px 0px;     
+        padding: 55px 0px 0px 0px;     
     }
 
 img {
@@ -41,7 +44,7 @@ nav {
     position: fixed;
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    height: 50px;
+    height: 55px;
     width: 100vw;
     top: 0;
     transition: 0.3s;
@@ -50,6 +53,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
     padding: 10px 0 0 0;
 }
