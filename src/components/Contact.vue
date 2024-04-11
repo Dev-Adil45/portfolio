@@ -1,6 +1,6 @@
 <template>
-    <section id="Contact">
-    <h2>Pour toute collaboration contactez-moi</h2>
+    <div id="Contact">
+    <h2>&#8659; Pour toute collaboration 	&#8659;</h2>
     
 <form action="#">
   <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
@@ -24,11 +24,11 @@
   </fieldset>
       </form>
     
-    </section>
+    </div>
 </template>
 
 <style scoped>
-section {
+#Contact {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,7 +39,7 @@ section {
     margin: 20px;
     opacity: 0.8;
 }
-section:hover {
+#Contact:hover {
     opacity: 1;
 }
 

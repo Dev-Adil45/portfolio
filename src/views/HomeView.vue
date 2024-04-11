@@ -5,6 +5,7 @@ import Competences from '@/components/Competences.vue';
 import Projets from '@/components/Projets.vue';
 import Modal from '@/components/Modal.vue';
 import Contact from '@/components/Contact.vue'
+import Footer from '@/components/Footer.vue'
 
 </script>
 
@@ -16,6 +17,7 @@ import Contact from '@/components/Contact.vue'
     <Projets/>
     <Modal/>
     <Contact/>
+    <Footer/>
 
   </main>
 </template>
