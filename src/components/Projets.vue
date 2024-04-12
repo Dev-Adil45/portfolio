@@ -16,8 +16,8 @@
     <template #body>
         <img :src="info1.img" alt="Image de mes projets" class="image">
         <p>{{ info1.techno }}</p>
-        <p>{{ info1.lien }}</p>
         <p>{{ info1.Page }}</p>
+        <a v-bind:href="info1.lien" target="_blank">Lien du projet vers github</a>
     </template>
     <template #footer></template>
 </Modal></li>
@@ -110,7 +110,9 @@ button {
     opacity: 1;
     width: 55px;
 }
-
+a {
+    color: white;
+}
 
 
 </style>

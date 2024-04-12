@@ -4,9 +4,9 @@
         <h1>Mon Portfolio</h1>
         <nav id="navbar">
             <ul>
-            <li><a href="#top"><img id="icon-navbar" src="../../public/logo.png" alt="Logo-DevAdil"></a></li>
-            <li><a href="#AboutMe">Moi ?</a></li>
-            <li><a href="#Competences">Compétences</a></li>
+                <li><a href="#AboutMe">Moi ?</a></li>
+                <li><a href="#Competences">Compétences</a></li>
+                <li><a href="#top"><img id="icon-navbar" src="../../public/logo.png" alt="Logo-DevAdil"></a></li>
             <li><a href="#Contact">Contact</a></li>
             <li><a href="#Mesprojets">Mes projets</a></li>
         </ul>
@@ -70,6 +70,7 @@ nav ul li {
 nav ul li:hover {
     font-size: 1.2rem;
     transition: 0.3s;
+    text-decoration: underline;
 }
 
 </style>
