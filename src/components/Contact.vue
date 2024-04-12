@@ -2,7 +2,7 @@
     <div id="Contact">
     <h2>&#8659; Pour toute collaboration 	&#8659;</h2>
     
-<form action="#">
+<form id="form" action="#">
   <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
   <fieldset>
     <legend>Contact</legend>
@@ -11,16 +11,18 @@
       <input id="nom" placeholder="Entrez votre nom ici" autofocus="" required=""><br>
       <label for="telephone">Portable</label>
      
-      <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br>
+      <input type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br>
       <label for="email">Email <em>*</em></label>
       <input id="email" type="email" placeholder="Entrez votre email ici" required="">
       </fieldset>
+
       <fieldset>
     <legend>Message</legend>
       
       <label for="comments">Ecrivez votre message</label>
-      <textarea id="comments"></textarea>
-      <p><input id="submit" type="submit" value="Valider"></p>
+      <textarea id="comments"></textarea> <br>
+
+      <input id="submit" type="submit" value="Valider">
   </fieldset>
       </form>
     
@@ -44,9 +46,7 @@
 }
 
 
-p {
-  margin-top: 0px;
-}
+
  
 fieldset {
   margin-bottom: 15px;
@@ -74,6 +74,7 @@ em {
  #submit {
     border-radius: 25px;
     cursor: pointer;
+    margin-top: 10px;
  }
  #submit:focus {
     background-color: green;
@@ -96,9 +97,14 @@ input[type=submit] {
   width: 150px;
   padding: 10px;
 }
+#output {
+  text-align: center;
+}
+
+
+
 </style>
 
 <script setup>
 
-
-</script>
+  </script>

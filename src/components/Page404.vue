@@ -3,7 +3,7 @@
     <h1>Erreur 404</h1>
     <p>Cette page n'existe pas.</p><br>
     <p>Cliquez sur le bouton ci-dessous pour revenir sur la page d'acceuil.</p>
-
+    
     <router-link :to="{name: 'home' }"><button id="btn-error">Retour</button></router-link></div>
 </template>
 
